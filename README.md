@@ -26,4 +26,4 @@ Ini adalah contoh program menggunakan PHP dan MySQL.
     ('PHP', 'fail', 69);
     ```
 
-2. Sesuaikan isian pada file [lib/connect.php](lib/connect.php) sesuai dengan host, user, password, dan database masing-masin.
+2. Sesuaikan isian pada file [lib/connect.php](lib/connect.php) sesuai dengan host, user, password, dan database masing-masing.
