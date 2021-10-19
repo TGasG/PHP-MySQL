@@ -27,3 +27,7 @@ Ini adalah contoh program menggunakan PHP dan MySQL.
     ```
 
 2. Sesuaikan isian pada file [lib/connect.php](lib/connect.php) sesuai dengan host, user, password, dan database masing-masing.
+
+# Live Website
+
+Untuk live website dapat diliat [disini](https://pemrogramanwebupnvj.000webhostapp.com)
