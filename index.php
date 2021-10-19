@@ -41,10 +41,10 @@ $results = select_all_data();
             <tbody>
                 <?php foreach ($results as $data) : ?>
                     <tr>
-                        <th scope="row"><?= $data['id'] ?></th>
-                        <td><?= $data['language'] ?></td>
-                        <td class="<?= ($data['status'] == 'pass') ? 'text-success' : 'text-danger' ?>"><?= $data['status'] ?></td>
-                        <td><?= $data['score'] ?></td>
+                        <th scope="row"><?= htmlspecialchars($data['id'], ENT_QUOTES, 'UTF-8'); ?></th>
+                        <td><?= htmlspecialchars($data['language'], ENT_QUOTES, 'UTF-8'); ?></td>
+                        <td class="<?= ($data['status'] == 'pass') ? 'text-success' : 'text-danger' ?>"><?= htmlspecialchars($data['status'], ENT_QUOTES, 'UTF-8'); ?></td>
+                        <td><?= htmlspecialchars($data['score'], ENT_QUOTES, 'UTF-8'); ?></td>
                         <td>
                             <form action="edit_delete.php" action="GET">
                                 <button class="btn btn-warning" type="submit" name="id" value="<?= $data['id'] ?>">Edit / Delete</button>
